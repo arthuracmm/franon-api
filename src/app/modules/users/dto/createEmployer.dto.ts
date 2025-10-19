@@ -34,11 +34,23 @@ export class CreateEmployerDto {
 
   @IsOptional()
   @IsString()
+  adressNumber: string;
+
+  @IsOptional()
+  @IsString()
+  complement: string;
+
+  @IsOptional()
+  @IsString()
   neighborhood: string;
 
   @IsOptional()
   @IsString()
   city: string;
+
+  @IsOptional()
+  @IsString()
+  state: string;
 
   @IsNotEmpty({ message: 'A senha é obrigatória' })
   @MinLength(6, { message: 'A senha deve ter pelo menos 6 caracteres' })

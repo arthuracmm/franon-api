@@ -50,8 +50,7 @@ async function bootstrap() {
       'jwt-auth',
     )
     .addTag('auth')
-    .addTag('users')
-    .addTag('upload')
+    .addTag('users')  
     .build();
 
   const document = SwaggerModule.createDocument(app, swaggerConfig);

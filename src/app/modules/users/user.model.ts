@@ -65,7 +65,7 @@ export class User extends Model<User> {
 
   @ApiProperty()
   @Column({ type: DataType.STRING, allowNull: true })
-  declare profileImage: string;
+  declare profileImage: string | null;
 
   @Column({ type: DataType.STRING, allowNull: false })
   declare password: string;

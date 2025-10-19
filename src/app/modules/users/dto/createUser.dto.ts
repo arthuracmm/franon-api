@@ -18,6 +18,12 @@ export class CreateUserDto {
   email: string;
 
   @ApiProperty({
+    description: 'Numero de telefone do usuário',
+    example: '(16) 00000-0000',
+  })
+  telephoneNumber: string;
+
+  @ApiProperty({
     description: 'Senha do usuário (mínimo 6 caracteres)',
     example: '123456',
   })
