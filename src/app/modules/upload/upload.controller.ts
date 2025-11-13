@@ -16,7 +16,7 @@ import { UploadService } from './upload.service';
 import { ApiTags } from '@nestjs/swagger';
 import type { Response } from 'express';
 
-@ApiTags('users')
+@ApiTags('upload')
 @Controller('upload')
 export class UploadController {
   constructor(private readonly uploadService: UploadService) { }
